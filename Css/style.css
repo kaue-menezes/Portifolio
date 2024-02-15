@@ -508,6 +508,10 @@ body.ligth p{
     html {
         font-size: 8.5px;
     }
+    
+    .trilho{
+        margin: auto;
+    }
 
     .container {
         padding: 0px 100px;
