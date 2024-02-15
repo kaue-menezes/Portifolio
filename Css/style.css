@@ -16,7 +16,10 @@
     --express-color: #dddddd;
 }
 
+
+
 /*Começo edição header ou cabeçalho*/
+
 * {
     margin: 0;
     padding: 0;
@@ -35,6 +38,7 @@ body {
     background-color: var(--bg-primary);
     color: var(--second);
     overflow-x: hidden;
+    transition: .5s;
 }
 
 header {
@@ -97,9 +101,12 @@ header {
     background-color: var(--terciary);
 }
 
+
 /* FIm edição header ou cabeçalho*/
 
+
 /* Começo edição banner*/
+
 #banner {
     width: 100vw;
     height: calc(100vh - 140px);
@@ -201,7 +208,7 @@ header {
 /*Fim edição banner*/
 
 /*Começo edição sobre mim*/
-#sobre-mim {
+#sobreMim {
     width: 100vw;
     background: var(--bg-second);
     padding: 200px 10px;
@@ -317,6 +324,82 @@ header {
 /* Fim de edição das experiencias*/
 
 
+/*Começo edição Modo Dark e Modo Light*/
+
+.trilho{
+    width: 75px;
+    height: 35px;
+    background-color: rgb(199, 199, 199);
+    /*margin: auto;*/
+    margin-right: 50px;
+    border-radius: 150px;
+    position: relative;
+    cursor: pointer;
+}
+
+.trilho .indicador{
+    width: 35px;
+    height: 35px;
+    background-color: black;
+    border-radius: 50%;
+    transform: scale(.9);
+    position: absolute;
+    left: 0;
+    transition: .5s;
+}
+
+.trilho.ligth{
+    background-color: black;
+}
+
+.trilho.ligth .indicador{
+    left: 40px;
+    background-color: white;
+}
+
+body.ligth{
+    background-color: white;
+}
+
+body.ligth h1{
+    color: black;
+}
+
+body.ligth h2{
+    color: black;
+}
+
+body.ligth p{
+    color: black;
+}
+
+#banner.ligth .lado-esquerdo h2{
+    color:  #007ACC;
+}
+
+#sobreMim.ligth .sobre-mim-direita .titulo p{
+    color:  #007ACC;
+}
+
+#sobreMim.ligth .sobre-mim-direita p{
+    color: black;
+}
+
+#sobreMim.ligth .sobre-mim-direita h1{
+    color: black;
+}
+
+#sobreMim.ligth .sobre-mim-esquerda img{
+    box-shadow: -5px 5px 0px 0px  #007ACC;
+}
+
+#sobreMim.ligth {
+    background: rgb(236, 236, 236);
+}
+
+#experiencias.ligth .job h1{
+    color: #007ACC;
+}
 
 /* Começo da edição dos projeot*/
 
@@ -429,13 +512,17 @@ header {
     .container {
         padding: 0px 100px;
     }
-
+    
 
 }
 
 @media (max-width: 1112px) {
     html {
         font-size: 8px;
+    }
+
+    .trilho{
+        margin: auto;
     }
 
     .lado-direito img {
@@ -509,6 +596,10 @@ header {
 
     .container {
         padding: 0px 0px;
+    }
+
+    .trilho{
+        margin: auto;
     }
 
     #projetos .container {
