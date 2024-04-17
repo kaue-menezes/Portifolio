@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    emailjs.init("VX_4NleGiqCWjgyH8");
+    emailjs.init("SCfX38trULgvKxP4y");
 
     var myForm = document.getElementById('my-form');
     
@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
         event.preventDefault();
 
         
-        emailjs.sendForm('service_wk97sla', 'template_8eunazl', this)
+     emailjs.sendForm('service_f9d866n', 'template_d2a6lav', this)
             .then(function() {
                 alert('Mensagem enviada com sucesso!');
                 myForm.reset(); 
