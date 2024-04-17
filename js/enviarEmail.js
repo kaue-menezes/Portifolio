@@ -1,5 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
-    emailjs.init("SCfX38trULgvKxP4y");
+    emailjs.init({
+        publicKey: "SCfX38trULgvKxP4y",
+      });
 
     var myForm = document.getElementById('my-form');
     
